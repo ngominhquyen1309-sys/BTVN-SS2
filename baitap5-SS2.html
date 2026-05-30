@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h2 style="text-align: center;">MY STORE</h2>
+        </header>
+        <hr />
+        <table border="2" cellspacing="10" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>ITEM PHOTO</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://cdn2.fptshop.com.vn/unsafe/800x0/thach_trai_cam_1_1b383c5e2d.jpg" alt="Cam"
+                            width="100" /></td>
+                    <td>CAM</td>
+                    <td>40.000đ/kg</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://khuvuonxanh.com/uploads/2023/02/qua-luu-do-thai-lan.jp" alt="Lựu"
+                            width="100" /></td>
+                    <td>LỰU</td>
+                    <td>200.000đ/kg</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://th.bing.com/th/id/R.85bfa7176f8a5aaec9b2cd8c3d80bb73?rik=CnJi84Mi7o99Gg&riu=http%3a%2f%2fvovankienthuc.com%2fstorage%2fpagedata%2f100447%2fimg%2fimages%2fblog%2f2849_sau-rieng.jpg&ehk=WIvrjQN7bAAIJXjllscFZB97mMIKSdEM9xOkBHDMXk0%3d&risl=&pid=ImgRaw&r=0"
+                            alt="Sầu riêng" width="100" /></td>
+                    <td>SẦU RIÊNG</td>
+                    <td>120.000đ/kg</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="" alt="nho mỹ" width="100" /></td>
+                    <td>NHO MỸ</td>
+                    <td>220.000đ/kg</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="https://mvm.co.jp/wp/wp-content/themes/mvm/images/products/american_cherry/info.png"
+                            alt="cherry" width="100" /></td>
+                    <td>CHERRY</td>
+                    <td>350.000đ/kg</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <div>
+        <header>
+            <h2>BOOKING FORM</h2>
+        </header>
+        <hr />
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" /><br /><br />
+
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required /><br /><br />
+
+            <label for="time">Booking Time:</label>
+            <input type="time" id="time" name="time" required /><br /><br />
+            
+            <label min="0" for="number of guest" >Number of Guest:</label>
+            <input type="number" id="number_of_guest" name="number_of_guest" required /><br /><br />
+            <input type="submit" value="Submit" />
+    </div>
+    <br/>
+    <div>
+        <header>
+            <h2>CAR PURCHASE FORM</h2>
+        </header>
+        <hr />
+        <form action="http:\\www.carpurchase.com" method="post"><br/>
+            <label for="NAME" >NAME:</label>
+            <input type="text" id="name" name="name" required /><br/><br/>
+            <label for="EMAIL" >EMAIL:</label>
+            <input type="email" id="email" name="email" required /><br/><br/>
+            <label for="PHONE" >PHONE NUMBER:</label>
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" /><br/><br/>
+            <label>Choose a car</label>
+            <select name="car" id="car" required>
+                <option value="">Select a car</option>
+                <option value="TOYOTA">TOYOTA</option>
+                <option value="HONDA">HONDA</option>
+                <option value="NISSAN">NISSAN</option>
+                <option value="MITSUBISHI">MITSUBISHI</option>
+            </select><br/><br/>
+            <label>Choose a color</label>
+            <select name="Color" id="color" required>
+                <option value="">Select a color</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select><br/><br/>
+            <label for="Quantity" >Quantity:</label>
+            <input min="0" type="number" id="Quantity" name="Quantity" required /><br/><br/>
+            <label for="Delivery Date" >Delivery Date:</label>
+            <input type="date" id="delivery date" name="delivery date" required /><br/><br/>    
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+
+</html>
